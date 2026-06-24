@@ -96,35 +96,3 @@ choices ➔ 0 (Primer elemento) ➔ message ➔ content
 Para el desarrollo de este comando se utilizaron las especificaciones de las siguientes documentaciones oficiales:
  * **[Bot Designer For Discord Wiki](https://wiki.botdesignerdiscord.com/guides/general/httpRequests.html):** Guía oficial de HTTP Requests en BDFD donde se detallan las normas de uso para $httpPost, $httpAddHeader y $httpResult.
  * **[Groq](http://console.groq.com/) API Reference:** Documentación para Desarrolladores de Groq para las especificaciones de endpoints compatibles con OpenAI, esquemas de cabeceras de autorización Bearer y listado de modelos disponibles.
-
-A continuación tienes la lista completa y actualizada de los modelos disponibles oficialmente en la API de Groq, divididos por su categoría y especialidad.
-Cada uno de ellos tiene un ID específico 
-> [!IMPORTANT]
-> Que es el texto que debes colocar exactamente en el campo "model" de tu JSON en BDFD usando la `$var` Model que deje al inicio
-### 1. Modelos de Texto Principales (Producción y Uso General)
-Estos son los modelos estándar más estables y recomendados para bots de charla.
- * **llama-3.1-8b-instant**
-   * **Desarrollador:** Meta
-   * **Descripción:** Es el modelo más rápido de toda la plataforma. Tiene una ventana de contexto de 128k tokens. Ideal para bots conversacionales fluidos y comandos rápidos.
- * **llama-3.3-70b-versatile**
-   * **Desarrollador:** Meta
-   * **Descripción:** Un modelo de alta gama sumamente inteligente. Excelente para razonamiento lógico complejo, programación, traducción avanzada y manejo de instrucciones estructuradas muy estrictas.
- * **mixtral-8x7b-32768**
-   * **Desarrollador:** Mistral AI
-   * **Descripción:** Un modelo basado en arquitectura MoE (Mixture of Experts). Es muy eficiente, rinde excelente en tareas creativas y ofrece una ventana de contexto nativa de 32,768 tokens.
-### 2. Modelos Especializados en Programación y Código
-Si quieres que tu bot ayude a los usuarios de tu servidor a programar, corregir errores de código o explicar scripts, estos son los mejores:
- * **coder-llama-70b** (o variantes actualizadas como llama-3.1-70b-instruct)
-   * **Desarrollador:** Meta
-   * **Descripción:** Modelos refinados específicamente con repositorios de código para entender sintaxis de múltiples lenguajes (JavaScript, Python, C++, etc.).
- * **deepseek-coder-33b-instruct** (Disponible según región/actualización)
-   * **Desarrollador:** DeepSeek
-   * **Descripción:** Uno de los modelos open-source más potentes del mundo para generación y comprensión de código fuente.
-### 3. Modelos Livianos / Versiones "Preview" y Herramientas
-Modelos diseñados para consumir muy pocos recursos, tareas de clasificación masiva o pruebas experimentales:
- * **gemma2-9b-it**
-   * **Desarrollador:** Google
-   * **Descripción:** La versión de instrucciones de Gemma 2. Tiene un rendimiento bruto sorprendente para su tamaño reducido.
- * **llama-3.2-1b-preview** / **llama-3.2-3b-preview**
-   * **Desarrollador:** Meta
-   * **Descripción:** Modelos ultra-pequeños diseñados originalmente para dispositivos móviles. En Groq corren a miles de palabras por segundo; útiles para tareas ultra-simples.
