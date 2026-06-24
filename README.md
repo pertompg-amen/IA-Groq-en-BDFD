@@ -120,3 +120,5 @@ Si tu bot necesita procesar archivos de voz, notas de audio o comandos hablados 
  * **whisper-large-v3** / **whisper-large-v3-turbo**
    * **Desarrollador:** OpenAI
    * **Descripción:** Modelos líderes en reconocimiento automático del habla (STT). La versión *turbo* ofrece una velocidad de procesamiento masiva sacrificando una cantidad mínima de precisión.
+> [!NOTE]
+> Este modelo no lo e probado, pero según tengo entendido es como si usaras ChatGPT en llamada, cosa que en BDFD es imposible sin API :/
