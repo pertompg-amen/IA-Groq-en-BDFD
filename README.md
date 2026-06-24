@@ -96,6 +96,3 @@ choices ➔ 0 (Primer elemento) ➔ message ➔ content
 Para el desarrollo de este comando se utilizaron las especificaciones de las siguientes documentaciones oficiales:
  * **[Bot Designer For Discord Wiki](https://wiki.botdesignerdiscord.com/guides/general/httpRequests.html):** Guía oficial de HTTP Requests en BDFD donde se detallan las normas de uso para $httpPost, $httpAddHeader y $httpResult.
  * **[Groq](http://console.groq.com/) API Reference:** Documentación para Desarrolladores de Groq para las especificaciones de endpoints compatibles con OpenAI, esquemas de cabeceras de autorización Bearer y listado de modelos disponibles.
-```
-
-```
