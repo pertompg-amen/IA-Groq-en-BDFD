@@ -96,3 +96,27 @@ choices ➔ 0 (Primer elemento) ➔ message ➔ content
 Para el desarrollo de este comando se utilizaron las especificaciones de las siguientes documentaciones oficiales:
  * **[Bot Designer For Discord Wiki](https://wiki.botdesignerdiscord.com/guides/general/httpRequests.html):** Guía oficial de HTTP Requests en BDFD donde se detallan las normas de uso para $httpPost, $httpAddHeader y $httpResult.
  * **[Groq](http://console.groq.com/) API Reference:** Documentación para Desarrolladores de Groq para las especificaciones de endpoints compatibles con OpenAI, esquemas de cabeceras de autorización Bearer y listado de modelos disponibles.
+
+A continuación tienes la lista con los modelos, divididos por su categoría.
+Cada uno de ellos tiene un ID específico
+
+> [!IMPORTANT]
+> Que es el texto que debes colocar exactamente en el campo "model" de tu JSON en BDFD usando la `$var` Model que deje al inicio
+
+> 
+### 1. Modelos de Texto Principales (Producción y Uso General)
+Estos son los modelos estándar más estables, eficientes y recomendados para bots de charla.
+ * **llama-3.1-8b-instant**
+   * **Desarrollador:** Meta
+   * **Descripción:** El modelo de velocidad ultrarrápida (instantánea) de Meta. Ofrece una ventana de contexto de 128k tokens. Ideal para bots conversacionales extremadamente fluidos y respuestas rápidas de comandos.
+ * **llama-3.3-70b-versatile**
+   * **Desarrollador:** Meta
+   * **Descripción:** Un modelo de alta gama inteligente y versátil con 128k de contexto. Excelente para razonamiento lógico complejo, programación, traducción avanzada y el cumplimiento estricto de instrucciones estructuradas.
+ * **openai/gpt-oss-120b** / **openai/gpt-oss-20b**
+   * **Desarrollador:** OpenAI (Modelos Abiertos / GPT OSS)
+   * **Descripción:** Modelos abiertos integrados en la plataforma Groq que destacan por su gran velocidad de respuesta y equilibrio en tareas de uso general.
+### 2. Modelos Especializados en Audio (Transcripción)
+Si tu bot necesita procesar archivos de voz, notas de audio o comandos hablados para convertirlos a texto:
+ * **whisper-large-v3** / **whisper-large-v3-turbo**
+   * **Desarrollador:** OpenAI
+   * **Descripción:** Modelos líderes en reconocimiento automático del habla (STT). La versión *turbo* ofrece una velocidad de procesamiento masiva sacrificando una cantidad mínima de precisión.
